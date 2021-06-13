@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_restaurants">
+
+    <fragment
+        android:id="@+id/navigation_restaurants"
+        android:name="com.example.fastrest.fragments.restaurants.RestaurantsFragment"
+        android:label="@string/title_restaurants"
+        tools:layout="@layout/fragment_restaurants" >
+        <action
+            android:id="@+id/action_navigation_restaurants_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.fastrest.fragments.map.MapsFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_navigation_map_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.example.fastrest.fragments.order.OrderFragment"
+        android:label="@string/title_order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.fastrest.fragments.menu.MenuFragment"
+        android:label="@string/title_order"
+        tools:layout="@layout/fragment_menu" />
+</navigation>

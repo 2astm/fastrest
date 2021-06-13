@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fast Rest</string>
+    <string name="title_restaurants">Restaurants</string>
+    <string name="title_map">Map</string>
+    <string name="title_order">Order</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
